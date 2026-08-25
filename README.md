@@ -16,9 +16,10 @@ Requires [uv](https://docs.astral.sh/uv/) and Python 3.13 (uv installs it if mis
 # 1. Install dependencies into a local .venv (creates uv.lock on first run)
 uv sync
 
-# 2. Add your LangSmith key
+# 2. Add your keys
 cp .env.example .env
-# then edit .env — ANTHROPIC_API_KEY and LANGSMITH_API_KEY are both your LangSmith key
+# then edit .env — either route through the LangChain gateway (LangSmith key)
+# or point ANTHROPIC_API_KEY at a real Anthropic key. See .env.example.
 
 # 3. Run the agent locally against one task's knowledge base
 set -a; source .env; set +a
@@ -30,9 +31,11 @@ uv run python dev.py "urban beekeeping" # any topic present in the task's info/
 
 ## Model routing
 
-All model calls go through the LangChain gateway (`gateway.smith.langchain.com`), authenticated
-with the LangSmith key — never the Anthropic API directly. See `.env.example` for the full set of
-variables; `ANTHROPIC_API_KEY` and `LANGSMITH_API_KEY` are the same LangSmith key.
+By default all model calls route through the LangChain gateway (`gateway.smith.langchain.com`),
+authenticated with your LangSmith key — so `ANTHROPIC_API_KEY` and `LANGSMITH_API_KEY` are the
+same value and no Anthropic account is required. Alternatively, drop `ANTHROPIC_BASE_URL` and set
+`ANTHROPIC_API_KEY` to a real Anthropic key to call the provider directly. See `.env.example` for
+both options.
 
 ## Full eval
 
@@ -80,6 +83,7 @@ harbor-report-demo/
 │   ├── deep-sea-report/            # same shape, topic = deep sea exploration
 │   └── urban-beekeeping-report/    # same shape, topic = urban beekeeping
 ├── dev.py                          # local runner: imports deep-agent, runs vs a scratch copy of info/
+├── presentation-deck.html          # self-contained slide deck walking through the demo
 └── .env                            # gateway + LangSmith creds (gitignored; see .env.example)
 ```
 
