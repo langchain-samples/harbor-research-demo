@@ -8,10 +8,10 @@ verifier checks the output and produces a reward.
 📊 **Slides:** [`presentation-deck.html`](./presentation-deck.html) — a self-contained walkthrough
 of the demo (open in a browser; arrow keys / click to advance).
 
-Reward in LangSmith Experiments: 
+LangSmith Experiment Results: 
 <img width="1628" height="208" alt="Screenshot 2026-08-25 at 5 00 50 PM" src="https://github.com/user-attachments/assets/d6bda0d6-625a-4f32-9628-e859e76b567a" />
 
-Sandbox Use during Experiment: 
+LangSmith Sandboxes used for the Experiment: 
 <img width="1127" height="312" alt="Screenshot 2026-08-25 at 5 02 42 PM" src="https://github.com/user-attachments/assets/e45ce6da-15e4-48b7-b5a0-5fc5034eb7f0" />
 
 Harbor Jobs:
