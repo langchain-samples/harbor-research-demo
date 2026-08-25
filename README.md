@@ -5,6 +5,9 @@ A [deepagents](https://github.com/langchain-ai/deepagents) research agent, evalu
 The agent reads a local markdown knowledge base and writes a 3-paragraph report; a pytest
 verifier checks the output and produces a reward.
 
+📊 **Slides:** [`presentation-deck.html`](./presentation-deck.html) — a self-contained walkthrough
+of the demo (open in a browser; arrow keys / click to advance).
+
 ## Quickstart
 
 Requires [uv](https://docs.astral.sh/uv/) and Python 3.13 (uv installs it if missing).
