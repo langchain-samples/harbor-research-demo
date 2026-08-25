@@ -8,6 +8,16 @@ verifier checks the output and produces a reward.
 📊 **Slides:** [`presentation-deck.html`](./presentation-deck.html) — a self-contained walkthrough
 of the demo (open in a browser; arrow keys / click to advance).
 
+Reward in LangSmith Experiments: 
+<img width="1628" height="208" alt="Screenshot 2026-08-25 at 5 00 50 PM" src="https://github.com/user-attachments/assets/d6bda0d6-625a-4f32-9628-e859e76b567a" />
+
+Sandbox Use during Experiment: 
+<img width="1127" height="312" alt="Screenshot 2026-08-25 at 5 02 42 PM" src="https://github.com/user-attachments/assets/e45ce6da-15e4-48b7-b5a0-5fc5034eb7f0" />
+
+Harbor Jobs:
+<img width="1632" height="619" alt="Screenshot 2026-08-25 at 5 03 59 PM" src="https://github.com/user-attachments/assets/62cb5624-53b7-45b8-a3db-f03f92e49dc4" />
+
+
 ## Quickstart
 
 Requires [uv](https://docs.astral.sh/uv/) and Python 3.13 (uv installs it if missing).
