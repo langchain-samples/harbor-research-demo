@@ -1,0 +1,12 @@
+# secrets / local config
+.env
+
+# generated run artifacts
+.dev-workspace/
+jobs/
+
+# python / uv (uv.lock is tracked on purpose)
+.venv/
+__pycache__/
+*.egg-info/
+.pytest_cache/
